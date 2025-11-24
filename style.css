@@ -1,0 +1,37 @@
+body {
+    font-family: 'Segoe UI', 'Inter', Arial, sans-serif;
+    background: #f6f8fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+.mini-article {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    background: #ffffff;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 64px clamp(32px,5vw,96px) 56px clamp(32px,5vw,96px);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    line-height: 1.75;
+}
+
+.mini-article header { text-align: left; }
+.mini-article h1 { font-size: 3.2rem; font-weight: 800; margin: 0 0 8px; letter-spacing: -0.5px; color: #1f3d66; }
+
+/* Improve drop cap alignment */
+.mini-article p:first-of-type::first-letter { font-size: 3.2rem; font-weight: 700; float: left; line-height: 1; padding: 0 14px 2px 0; margin-top: 4px; color: #2d72d9; }
+
+.mini-article figure { margin: 16px 0 8px; text-align: center; }
+.mini-article img { max-width: 560px; width: 100%; height: auto; border-radius: 18px; box-shadow: 0 6px 28px rgba(31,61,102,0.25); display: block; margin: 0 auto 12px; }
+.mini-article figcaption { font-size: 0.75rem; color: #5c6d7a; letter-spacing: .05em; text-transform: uppercase; }
+
+.mini-article hr { border: none; height: 2px; background: linear-gradient(90deg,#d8e2ec,#ffffff); margin: 12px 0 4px; }
+
+.mini-article ul { list-style: none; margin: 0; padding: 0; }
+.mini-article li.product { background: linear-gradient(135deg,#e3eaf2,#f9fbfd); border: 1px solid #d0dae4; padding: 24px 28px; font-size: 1rem; line-height: 1.55; border-radius: 24px; box-shadow: 0 4px 24px rgba(45,114,217,0.12); }
+.mini-article li.product strong { display: block; font-size: 1.2rem; margin-bottom: 6px; color: #2d72d9; }
